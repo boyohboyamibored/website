@@ -2,8 +2,9 @@
 
 This is currently using flask at the moment, it's still in the testing phase
 
-To install, clone the directory
+To install,  
 ```bash
+# clone the directory
 git clone https://www.github.com/boyohboyamibored/website.git website
 cd website
 
