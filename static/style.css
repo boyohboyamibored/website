@@ -2,14 +2,14 @@
 
 
 :root {
-    --background-color: #fff
+    --background-color: #fff;
     --text-color: #333;
 }
 
 /* dark theme */
 @media (prefers-color-scheme: dark) {
     body {
-        --background-color: #fff
+        --background-color: #fff;
         --text-color: #181a1b;
     }
 }
