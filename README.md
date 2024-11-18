@@ -1,8 +1,10 @@
 # My website
 
-This is currently using flask at the moment, it's still in the testing phase
+This is currently using flask at the moment, and it's still in the testing phase.  
+Any feedback would be appreciated.
 
-To install,  
+To install,
+
 ```bash
 # clone the directory
 git clone https://www.github.com/boyohboyamibored/website.git website
@@ -17,6 +19,6 @@ source env/bin/activate
 # install requirements
 pip install -r requirements.txt
 
-# run it 
+# run it
 python main.py
 ```
