@@ -3,7 +3,7 @@
 This is currently using flask at the moment, and it's still in the testing phase.  
 Any feedback would be appreciated.
 
-To install,
+To setup,
 
 ```bash
 # clone the directory
