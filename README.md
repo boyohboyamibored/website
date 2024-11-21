@@ -20,5 +20,5 @@ source env/bin/activate
 pip install -r requirements.txt
 
 # run it
-python main.py
+python server.py
 ```
