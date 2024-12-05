@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
-    <head>
-        {% if title %}
-            <title> Website - {{title}}</title>
-        {% else %}
-            <title> Website</title>
-        {% endif %}
-        <link rel="stylesheet" type="text/css" href="{{ url_for( "static", filename="style.css") }}">
-        <link rel="icon" type="image/x-icon" href="{{ url_for( "static", filename="favicon.ico") }}">
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+<head>
+    {% if title %}
+    <title> Website - {{title}}</title>
+    {% else %}
+    <title> Website</title>
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for( "static", filename="style.css" ) }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for( "static", filename="lain.jpg" ) }}"]>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-        <header>
-            <nav class="navbar">
-                <a class="logo" href="{{ url_for("home") }}">[~]</a>
-                <ul>
-                    <li><a href="{{ url_for("home") }}">Home<a></li>
-                    <li><a href="{{ url_for("posts") }}">Posts</a></li>
-                    <li><a href="{{ url_for("contact") }}">Contact</a></li>
-                    <li><a href="{{ url_for("about") }}">About</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="content">
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="{{ url_for("home") }}">[~]</a>
+            <ul>
+                <li><a href="{{ url_for("home") }}">Home<a></li>
+                <li><a href="{{ url_for("posts") }}">Posts</a></li>
+                <li><a href="{{ url_for("contact") }}">Contact</a></li>
+                <li><a href="{{ url_for("about") }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
         {% block content %}
-
         {% endblock content %}
-        </main>
-    </body>
+    </main>
+</body>
+
 </html>
