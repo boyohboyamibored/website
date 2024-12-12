@@ -1,63 +1,61 @@
-/* ../templates/index.html */
-
-
+/* style template */
 :root {
-    --background-color: #fff;
-    --text-color: #333;
+  --background-color: #fff;
+  --text-color: #333;
 }
 
 /* dark theme */
 @media (prefers-color-scheme: dark) {
-    body {
-        --background-color: #fff;
-        --text-color: #181a1b;
-    }
+  body {
+    --background-color: #fff;
+    --text-color: #181a1b;
+  }
 }
 
 /* resize navbar on smaller screens */
 @media (max-width: 400px) {
-    .navbar {
-        flex-direction: column;
-    }
+  .navbar {
+    flex-direction: column;
+  }
 }
 
 body {
-    color: var(--text-color);
-    background: var(--background-color);
-    font-size: 1.1em;
-    font-family: "JetBrainsMono Nerd Font", "Droid Sans";
-    max-width: 600px;
-    padding:5px;
-    margin-left: auto;
-    margin-right: auto;
+  color: var(--text-color);
+  background: var(--background-color);
+  font-size: 1.1em;
+  font-family: "JetBrainsMono Nerd Font", "Droid Sans";
+  max-width: 600px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
 .navbar {
-    display: flex;
-    font-size: 20px; font-weight: bold;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar li {
-    list-style-type: none;
-    display: inline-block;
+  list-style-type: none;
+  display: inline-block;
 }
 
 .navbar a {
-    color: #3391ff;
+  color: #3391ff;
 }
 
 .navbar a:hover {
-    color: #ff7800;
+  color: #ff7800;
 }
 
 h1 {
-    color: #ff7800;
-    font-family: "Free Serif", "Droid Serif";
+  color: #ff7800;
+  font-family: "Free Serif", "Droid Serif";
 }
 
 a {
-    color: #ff78a0;
+  color: #ff78a0;
 }
