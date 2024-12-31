@@ -1,14 +1,30 @@
 /* style template */
 :root {
-  --text-color: #fff;
-  --background-color: #181a1b;
+  --background-color: #ffffff;
+  --color-text: #000000;
+  --font-size: 1.1em;
+
+  /* fonts */
+  --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
+    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
+
+  --important-color: #ff7800;
+  --color-text-strong: #020617;
+  --color-navbar-items: #3391ff;
 }
 
-/* light theme */
-@media (prefers-color-scheme: light) {
+/* dark theme */
+@media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #fff;
-    --text-color: #000;
+    --background-color: #181a1b;
+    --color-text: #ffffff;
+    --color-text-strong: #f8fafc;
   }
 }
 
@@ -20,10 +36,10 @@
 }
 
 body {
-  color: var(--text-color);
+  color: var(--color-text);
   background: var(--background-color);
-  font-size: 1.1em;
-  font-family: "JetBrainsMono Nerd Font", "Droid Sans";
+  font-size: var(--font-size);
+  font-family: var(--font-mono);
   max-width: 600px;
   padding: 5px;
   margin-left: auto;
@@ -44,16 +60,25 @@ body {
 }
 
 .navbar a {
-  color: #3391ff;
+  color: var(--color-navbar-items);
 }
 
 .navbar a:hover {
-  color: #ff7800;
+  color: var(--important-color);
 }
 
 h1 {
-  color: #ff7800;
-  font-family: "Free Serif", "Droid Serif";
+  color: var(--important-color);
+  font-family: var(--font-serif);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-strong);
+  font-family: var(--font-serif);
 }
 
 a {
