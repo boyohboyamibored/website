@@ -2,6 +2,8 @@
 :root {
   --background-color: #ffffff;
   --color-text: #000000;
+  --font-size: 1.1em;
+
   /* fonts */
   --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
@@ -11,6 +13,7 @@
     Segoe UI Emoji, Segoe UI Symbol;
   --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
     monospace;
+
   --important-color: #ff7800;
   --color-text-strong: #020617;
   --color-navbar-items: #3391ff;
@@ -35,7 +38,7 @@
 body {
   color: var(--color-text);
   background: var(--background-color);
-  font-size: 1.1em;
+  font-size: var(--font-size);
   font-family: var(--font-mono);
   max-width: 600px;
   padding: 5px;
